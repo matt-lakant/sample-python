@@ -1,9 +1,10 @@
+import os
 import boto3
 from botocore.exceptions import NoCredentialsError, ClientError
 
 # Replace these variables with your own
-ACCESS_KEY = 'DO00RET48U9L249DN3AZ'
-SECRET_KEY = 'jr9sHy+1Cvuq+0AVoWNCOLZQSZ4WwMRDmzLKYpffU1I'
+ACCESS_KEY = os.getenv('ACCESS_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY')
 SPACE_NAME = 'dev-filezone'
 REGION_NAME = 'ams3'  # Change according to your region
 FILE_NAME = 'FAZI-CLOSING-EN-2024-09-03.csv'  # The name of the file you want to read
