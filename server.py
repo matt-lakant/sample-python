@@ -10,7 +10,8 @@ import subprocess
 class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         # Call the other script and capture its output
-        result = subprocess.run(['python3', 'Read_File_From_DOSpace.py'], capture_output=True, text=True)
+        # result = subprocess.run(['python3', 'Read_File_From_DOSpace.py'], capture_output=True, text=True)
+        result = subprocess.run(['python3', 'Read_File_From_Local.py'], capture_output=True, text=True)
 
         # Prepare the response message
         if result.returncode != 0:
