@@ -63,7 +63,7 @@ if __name__ == "__main__":
     engine = create_engine(connection_string)
 
     # Specify the name of the table
-    table_name = 'your_table_name'
+    table_name = 'your_table_name2'
 
     # Save the DataFrame to PostgreSQL, auto-creating the table if it doesn't exist
     try:
